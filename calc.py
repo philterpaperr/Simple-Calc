@@ -14,7 +14,7 @@ def div(a,b):
     res=a//b;
     return res
 
-print('//--------------THIS IS SIMPLE CALCULATOR------------// \n')
+print('//--------------THIS IS A SIMPLE CALCULATOR------------// \n')
 
 x=1
 while x>0:
