@@ -13,30 +13,46 @@ def mul(a,b):
 def div(a,b):
     res=a//b;
     return res
+def sqr(x):
+    res=x**0.5;
+    return res    
 
 print('//--------------THIS IS A SIMPLE CALCULATOR------------// \n')
 
 x=1
 while x>0:
     
-    print('\n *********C H O I C E S:********** \n Addition: 1 \n Subtraction: 2 \n Multiplication: 3 \n Division: 4 \n')
-
-    a=int(input(' Enter the first number: '))
-    b=int(input(' Enter the second number: '))
-
+    print('\n ********* C H O I C E S: ********** \n Addition: 1 \n Subtraction: 2 \n Multiplication: 3 \n Division: 4 \n Square Root: 5 \n')
+    
     n=int(input(' Enter your choice: '))
-
+    
+    if n==5:
+        x=int(input(' Enter Number:'))
+        print(' The Square Root is : ',sqr(x), '\n')
+       
+    
     if n==1:
+        a=int(input(' Enter the first number: '))
+        b=int(input(' Enter the second number: '))
+
         print(' The sum is : ',add(a,b), '\n')
 
-    elif n==2:
+    if n==2:
+        a=int(input(' Enter the first number: '))
+        b=int(input(' Enter the second number: '))
+
         print(' The difference is : ',sub(a,b), '\n')
 
-    elif n==3:
+    if n==3:
+        a=int(input(' Enter the first number: '))
+        b=int(input(' Enter the second number: '))
+
         print(' The product is : ',mul(a,b), '\n')
 
-    elif n==4:
+    if n==4:
+        a=int(input(' Enter the first number: '))
+        b=int(input(' Enter the second number: '))
+
         print(' The quotient is : ',div(a,b),'\n')
 
-    else:
-        print('Invalid inputs')
+    
