@@ -1,3 +1,5 @@
+import time
+
 def add(a,b):
     res=a+b;
     return res
@@ -54,5 +56,7 @@ while x>0:
         b=int(input(' Enter the second number: '))
 
         print(' The quotient is : ',div(a,b),'\n')
+        
+time.sleep(1.5)        
 
     
